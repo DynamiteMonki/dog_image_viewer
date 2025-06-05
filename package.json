@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+    "deploy": "vite build && vite-gh-pages"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "svelte": "^5.28.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-gh-pages": "^1.0.1"
   }
 }
