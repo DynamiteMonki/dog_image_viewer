@@ -5,6 +5,9 @@
   let imageUrl = '';
   let error = null;
 
+  // Automatically sanitize input
+  $: breed = breed.toLowerCase().replace(/\s+/g, '');
+
   async function fetchDogImage() {
     error = null;
     imageUrl = '';
@@ -52,8 +55,10 @@
 
 {#if error}
   <p style="color: red;">{error}</p>
-{:else if imageUrl}
-  <img src={imageUrl} alt="Dog Image" />
 {:else}
-  <p>Loading...</p>
+  {#if imageUrl}
+    <img src={imageUrl} alt="Dog Image" />
+  {:else}
+    <p>Loading...</p>
+  {/if}
 {/if}
