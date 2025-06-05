@@ -57,7 +57,7 @@
   <p style="color: red;">{error}</p>
 {:else}
   {#if imageUrl}
-    <img src={imageUrl} alt="Dog Image" />
+    <img src={imageUrl} alt={`Image of a ${breed}`} />
   {:else}
     <p>Loading...</p>
   {/if}
