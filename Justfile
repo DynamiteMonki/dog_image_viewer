@@ -7,3 +7,5 @@ serve:
 build:
   bun run build 
 
+dev:
+  bun run dev
