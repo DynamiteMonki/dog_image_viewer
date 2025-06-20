@@ -19,3 +19,5 @@ and to run the project:
 ```shell
 npm run dev
 ```
+
+and that's it nothing else.
